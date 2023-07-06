@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yummy">
+  <link rel="shortcut icon" href="./img/logo.png">
+  <title>Yummy</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="custom-scrollbar show-loader" id="index">
+
+  <!-- loader -->
+  <div id="loader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <!-- navbar sec -->
+  <nav id="Nav">
+    <div class="nav-body">
+      <div class="icon" id="nav-bars">
+        <div id="nav-logo">
+          <img src="./img/logo.png" alt="logo">
+        </div>
+        <div id="nav-btn">
+          <div class="navbar-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="nav-icons">
+          <i class="fa-solid fa-globe d-block mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="icon-main" id="nav-close">
+        <div class="icon">
+          <i class="fa-solid fa-xmark fa-2x"></i>
+        </div>
+      </div>
+      <div class="nav-info">
+        <div class="ancors">
+          <span class="nav-link active" id="Home">Home</span>
+          <span class="nav-link" id="Search">Search</span>
+          <span class="nav-link" id="Categories">Categories</span>
+          <span class="nav-link" id="Area">Area</span>
+          <span class="nav-link" id="Ingredients">Ingredients</span>
+          <span class="nav-link" id="ContactUs">Contact Us</span>
+          <span class="nav-link nav-linkX">
+            <div class="ToggleBtn">
+              <div class="circle"></div>
+            </div>
+          </span>
+        </div>
+        <div class="icons-text">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="text">
+            <p>Copyright Â© 2023 All Rights
+              Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main sec -->
+  <section id="main">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-11 offset-lg-1">
+
+          <!-- for search -->
+          <div id="searchInputs" class="mb-4">
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <input class="form-control inputX1" id="inputX" type="text" placeholder="Search By Name">
+              </div>
+              <div class="col-md-6 ">
+                <input class="form-control inputX2" id="inputX" type="text" maxlength="1"
+                  placeholder="Search By Frist Char">
+              </div>
+            </div>
+          </div>
+
+          <!-- for Contact Us -->
+          <div id="ContactUsForm" class="form">
+            <div class="row g-1">
+              <div class="form-floating p-1 col-md-6">
+                <input type="text" class="form-control formInput" id="floatingInput1" placeholder="Enter Your Name">
+                <label for="floatingInput">Enter Your Name</label>
+                <p class="inValid">Special characters and numbers not allowed, max length 9 characters</p>
+              </div>
+              <div class="form-floating p-1 col-md-6">
+                <input type="email" class="form-control formInput" id="floatingInput2" placeholder="Enter Your Email">
+                <label for="floatingInput">Enter Your Email</label>
+                <p class="inValid">Enter valid Email => exemple@yyy.zzz</p>
+              </div>
+              <div class="form-floating p-1 col-md-6">
+                <input type="number" class="form-control formInput" id="floatingInput3" placeholder="name@example.com">
+                <label for="floatingInput">Enter Your Phone</label>
+                <p class="inValid">Enter valid Phone Number => 01*********</p>
+              </div>
+              <div class="form-floating p-1 col-md-6">
+                <input type="number" class="form-control formInput" id="floatingInput4" placeholder="name@example.com">
+                <label for="floatingInput">Enter Your Age</label>
+                <p class="inValid">Enter valid age between 1-100</p>
+              </div>
+              <div class="form-floating p-1 col-md-6">
+                <input type="password" class="form-control formInput" id="floatingPassword1" placeholder="Password">
+                <label for="floatingPassword">Enter Your Password</label>
+                <p class="inValid">Enter valid password Minimum 8 characters, at least one letter and one number</p>
+              </div>
+              <div class="form-floating p-1 col-md-6">
+                <input type="password" class="form-control formInput" id="floatingPassword2" placeholder="Password">
+                <label for="floatingPassword">RePassword</label>
+                <p class="inValid">Enter valid repassword</p>
+              </div>
+              <div class="form-check col-12">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Show password</label>
+              </div>
+              <button id="submit" class="btn  my-3">Submit</button>
+            </div>
+          </div>
+          <div id="mainMeals" class="row g-3">
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- details section -->
+  <section id="details">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-11 offset-lg-1">
+          <div class="details-header">
+            <h3>Details meals</h3>
+            <div class="icon" id="close">
+              <i class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+          </div>
+          <div id="details-div" class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuary -->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome -->
+  <script src="js/all.min.js"></script>
+  <!-- main js file -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
